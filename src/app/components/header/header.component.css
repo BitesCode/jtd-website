@@ -1,0 +1,40 @@
+.navbar {
+    padding: 10px 25px;
+}
+
+.navbarSectionMain .navbar-brand img {
+    width: 60px;
+}
+
+.navbarSectionMain .nav-item a {
+    color: #000;
+    font-weight: 500;
+    position: relative;
+    font-size: 15px;
+}
+
+.navbarSectionMain .quote-btn {
+    background: #d5333e;
+    color: #ffffff;
+    border-radius: 100px;
+    font-weight: 500;
+    border: none;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    margin-left: 20px ;
+}
+
+
+.navbarSectionMain .quote-btn:hover {
+    background: #121212;
+    color: #fff;
+    border: none;
+}
+
+.navbarSectionMain .navbar-nav {
+    gap: 30px;
+}
+
+
+

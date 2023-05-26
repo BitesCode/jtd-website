@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Poppins:wght@400;500;700&display=swap');
+
+
+body,
+html {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+body.home-page {
+    background: #000;
+}
+
+
+.home-page a.nav-link {
+    color: #fff;
+}
+
+.home-page .container_footer_1 a,
+.home-page .container_footer_2 a,
+.home-page .container_footer_3 p,
+.home-page .copyright p {
+    color: #fff !important;
+}
+
+.home-page header {
+    box-shadow: 0 3px 12px 0 rgb(255 255 255 / 14%);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #000000ab;
+    z-index: 11111;
+    height: 85px;
+    margin: 0 !important;
+    backdrop-filter: saturate(180%) blur(5px);
+}

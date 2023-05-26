@@ -1,0 +1,19 @@
+.banner-section {
+        margin-top: 10%;
+}
+
+.service-section {
+        margin-top: 5%;
+        margin-bottom: 10%;
+}
+
+.service-banner {
+        width: 100%;
+        overflow: hidden;
+        border-radius: 10px;
+        height: 445px;
+}
+
+.service-banner>img {
+        width: 100%;
+}

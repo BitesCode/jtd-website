@@ -1,0 +1,22 @@
+.heading-title {
+    color: #ed1e24;
+    font-family: "Poppins", Sans-serif;
+    font-size: 6vw;
+    font-weight: 700;
+    line-height: 0.9em;
+}
+.heading-title span{
+    display: block;
+    height: 390px;
+    color: #fff;
+    width: min-content;
+}
+.typo-container{
+    top: 20%;
+    position: relative;
+}
+:host{
+    .typed-cursor {
+        display: none !important;
+    }
+}

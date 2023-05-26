@@ -1,0 +1,27 @@
+button.accordion-button,
+button.accordion-button:active {
+    background: #181818 !important;
+    color: #fff;
+    filter: initial !important;
+    border-radius: 7px;
+    box-shadow: none;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.accordion-body {
+    background: #2B2B2B;
+    color: #fff;
+}
+
+button.accordion-button::before,
+button.accordion-button::after {
+    filter: invert(89%) sepia(100%) saturate(0%) hue-rotate(223deg) brightness(111%) contrast(101%) !important;
+}
+
+.accordion-item {
+    border: none;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #000 !important;
+}
