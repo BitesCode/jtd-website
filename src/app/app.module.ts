@@ -10,6 +10,9 @@ import { ContactFormComponent } from './components/shared/contact-form/contact-f
 import { TypingAnimatorModule } from 'angular-typing-animator';
 import { AccordianComponent } from './components/shared/accordian/accordian.component'
 import { AccordionModule } from 'ngx-bootstrap/accordion';
+import { BrandSliderComponent } from './components/shared/brand-slider/brand-slider.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -20,13 +23,16 @@ import { AccordionModule } from 'ngx-bootstrap/accordion';
     routingComponents,
     BannerComponent,
     ContactFormComponent,
-    AccordianComponent
+    AccordianComponent,
+    BrandSliderComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     TypingAnimatorModule,
-    AccordionModule
+    AccordionModule,
+    CarouselModule,
+    BrowserAnimationsModule
     
   ],
   providers: [],
