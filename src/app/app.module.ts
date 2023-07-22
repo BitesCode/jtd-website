@@ -13,6 +13,7 @@ import { AccordionModule } from 'ngx-bootstrap/accordion';
 import { BrandSliderComponent } from './components/shared/brand-slider/brand-slider.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PagesTitleComponent } from './components/shared/pages-title/pages-title.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ContactFormComponent,
     AccordianComponent,
     BrandSliderComponent,
+    PagesTitleComponent,
   ],
   imports: [
     BrowserModule,

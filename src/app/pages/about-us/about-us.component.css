@@ -1,0 +1,48 @@
+.about__container {
+    margin-top: 70px;
+}
+
+.about__container .about__desc_box1 h5 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: left;
+    color: #ed1e24;
+}
+
+.about__container .about__desc_box1 span {
+    font-weight: bold;
+}
+
+.about__img_section {
+    height: 630px;
+    overflow: hidden;
+}
+
+.about__img_section img {
+    width: 100%;
+    height: 630px;
+}
+
+.about__desc_box {
+    background: #ed1e24;
+    height: 630px;
+    width: 100%;
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.about__container .about__desc_box h5 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: left;
+    color: #fff;
+}
+
+.about__container .about__desc_box p {
+    text-align: justify;
+    font-size: 17px;
+    color: #fff;
+}

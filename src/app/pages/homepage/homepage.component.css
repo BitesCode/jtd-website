@@ -136,6 +136,8 @@
     background: url(/assets/Client.png);
     margin-top: 20%;
     margin-bottom: 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .brand_slider-section h1 {

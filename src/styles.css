@@ -14,6 +14,20 @@ body.home-page {
     background: #000;
 }
 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #12121200;
+    background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #ed1e24;
+}
+
 .home-page a.nav-link {
     color: #fff;
 }
@@ -35,4 +49,9 @@ body.home-page {
     height: 85px;
     margin: 0 !important;
     backdrop-filter: saturate(180%) blur(5px);
+}
+
+.my-7 {
+    margin-top: 7rem;
+    margin-bottom: 7rem;
 }

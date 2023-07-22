@@ -1,0 +1,36 @@
+.contact_section .imgcontainer_about {
+    position: relative;
+    height: 340px;
+    overflow: hidden;
+}
+
+.contact_section .imgcontainer_about img {
+    width: 100%;
+    position: absolute;
+    top: -198px;
+}
+
+.about__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.about__content h3 {
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.about__content h3 span {
+    color: #ed1e24;
+}
+
+.about__content h4 {
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+}
