@@ -1,0 +1,23 @@
+<app-pages-title bannerTextHeading="A sneak peek of our daily jam!" bannerTextSubHeading="Choose as many as you want!">
+</app-pages-title>
+
+<section class="services__container my-7">
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-12 col-md-4 col-lg-4" *ngFor="let serviceDetails of servicesCardDetails">
+                <div class="card__services cards_1 default_animation">
+                    <div class="service__card_img">
+                        <img src="{{serviceDetails.imgUrl}}" alt="services-icon">
+                    </div>
+                    <div class="service__card_subject">
+                        <h5>{{serviceDetails.title}}</h5>
+                        <p>{{serviceDetails.desc}}</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

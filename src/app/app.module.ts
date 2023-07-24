@@ -14,7 +14,6 @@ import { BrandSliderComponent } from './components/shared/brand-slider/brand-sli
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PagesTitleComponent } from './components/shared/pages-title/pages-title.component';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,8 +33,7 @@ import { PagesTitleComponent } from './components/shared/pages-title/pages-title
     TypingAnimatorModule,
     AccordionModule,
     CarouselModule,
-    BrowserAnimationsModule
-    
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

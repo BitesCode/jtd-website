@@ -23,6 +23,7 @@
     "angular-typing-animator": "^0.0.9",
     "animate.css": "^4.1.1",
     "bootstrap": "^5.2.3",
+    "imagekitio-angular": "^2.0.0",
     "ngx-bootstrap": "^10.2.0",
     "ngx-owl-carousel-o": "^16.0.0",
     "rxjs": "~7.8.0",

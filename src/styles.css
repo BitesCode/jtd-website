@@ -55,3 +55,61 @@ body::-webkit-scrollbar-thumb {
     margin-top: 7rem;
     margin-bottom: 7rem;
 }
+
+.home-page .navbarSectionMain .quote-btn:hover {
+    background: transparent !important;
+    color: #d5333e !important;
+    border: 2px solid #d5333e !important;
+    padding: 9px 18px !important;
+}
+
+.active {
+    font-weight: bold;
+    position: relative;
+}
+
+.home-page .active {
+    font-weight: bold;
+    color: #fff !important;
+    position: relative;
+}
+
+a.nav-link {
+    position: relative;
+    color: #000;
+}
+
+a.nav-link::after {
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #ed1e24;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+    margin-top: 10px;
+}
+
+a.nav-link:not(.home-page a):hover {
+    color: #000;
+}
+
+a.nav-link:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+a.nav-link.active::after {
+    bottom: 0;
+    content: "";
+    display: block;
+    width: 100% !important;
+    height: 2px;
+    position: absolute;
+    background: #ed1e24;
+    width: 100%;
+    left: 0;
+    margin-top: 10px;
+}

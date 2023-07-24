@@ -22,9 +22,8 @@
     text-decoration: none;
     padding: 10px 20px;
     font-size: 15px;
-    margin-left: 20px ;
+    margin-left: 20px;
 }
-
 
 .navbarSectionMain .quote-btn:hover {
     background: #121212;
@@ -35,6 +34,3 @@
 .navbarSectionMain .navbar-nav {
     gap: 30px;
 }
-
-
-

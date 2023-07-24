@@ -1,0 +1,23 @@
+<app-pages-title bannerTextHeading="We're a one-stop shop that adapts to" bannerTextSubHeading="all your needs.">
+</app-pages-title>
+
+<section class="work_showcase my-5">
+    <div class="container-fluid">
+        <!-- Gallery -->
+        <div class="row">
+
+            <div class="col-12 col-lg-6 col-md-12 p-0" *ngFor="let workDetails of workShowcase">
+                <div class="card bg-dark text-white">
+                    <img class="card-img" src="{{workDetails.imgUrl}}" alt="Card image">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">{{workDetails.title}}</h5>
+                        <p class="card-text">{{workDetails.subHeading}}</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Gallery -->
+    </div>
+
+</section>

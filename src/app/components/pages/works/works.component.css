@@ -1,0 +1,36 @@
+.card {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.card>img {
+    border-radius: 0;
+}
+
+.card-img-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    border-radius: 0;
+    background: #ed1e24;
+    -webkit-transition: all 1s cubic-bezier(0.79, 0.33, 0.14, 0.53);
+    transition: all 1s cubic-bezier(0.79, 0.33, 0.14, 0.53);
+}
+
+.card:hover>.card-img-overlay {
+    opacity: 1;
+}
+
+.card-img-overlay>h5 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.card-img-overlay>p {
+    color: #ffffff;
+    font-size: 20px;
+}
