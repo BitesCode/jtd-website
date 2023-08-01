@@ -5,18 +5,15 @@
     font-weight: 700;
     line-height: 0.9em;
 }
-.heading-title span{
+
+.heading-title span {
     display: block;
     height: 390px;
     color: #fff;
     width: min-content;
 }
-.typo-container{
+
+.typo-container {
     top: 20%;
     position: relative;
-}
-:host{
-    .typed-cursor {
-        display: none !important;
-    }
 }

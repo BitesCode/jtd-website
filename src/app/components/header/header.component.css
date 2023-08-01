@@ -26,8 +26,8 @@
 }
 
 .navbarSectionMain .quote-btn:hover {
-    background: #121212;
-    color: #fff;
+    background: #fff;
+    color: #000;
     border: none;
 }
 

@@ -1,5 +1,5 @@
 .top__content_banner {
-    margin-top: 20px;
+    margin-top: 6rem;
     padding: 40px;
 }
 
@@ -7,9 +7,9 @@
     font-size: 4rem;
     font-weight: bold;
     text-align: left;
-    color: #ed1e24;
+    color: #fff;
 }
 
 .top__content_banner .top__left_content h3 span {
-    color: #121212;
+    color: #ed1e24;
 }

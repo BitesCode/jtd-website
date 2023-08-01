@@ -8,9 +8,7 @@ body,
 html {
     font-family: 'Nanum Gothic', sans-serif;
     font-family: 'Poppins', sans-serif;
-}
-
-body.home-page {
+    scroll-behavior: smooth;
     background: #000;
 }
 
@@ -28,18 +26,20 @@ body::-webkit-scrollbar-thumb {
     background-color: #ed1e24;
 }
 
-.home-page a.nav-link {
-    color: #fff;
-}
-
-.home-page .container_footer_1 a,
-.home-page .container_footer_2 a,
-.home-page .container_footer_3 p,
-.home-page .copyright p {
+a.nav-link,
+a.nav-link.active {
+    position: relative;
     color: #fff !important;
 }
 
-.home-page header {
+.container_footer_1 a,
+.container_footer_2 a,
+.container_footer_3 p,
+.copyright p {
+    color: #fff !important;
+}
+
+header {
     box-shadow: 0 3px 12px 0 rgb(255 255 255 / 14%);
     position: fixed;
     top: 0;
@@ -56,13 +56,6 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 7rem;
 }
 
-.home-page .navbarSectionMain .quote-btn:hover {
-    background: transparent !important;
-    color: #d5333e !important;
-    border: 2px solid #d5333e !important;
-    padding: 9px 18px !important;
-}
-
 .active {
     font-weight: bold;
     position: relative;
@@ -72,11 +65,6 @@ body::-webkit-scrollbar-thumb {
     font-weight: bold;
     color: #fff !important;
     position: relative;
-}
-
-a.nav-link {
-    position: relative;
-    color: #000;
 }
 
 a.nav-link::after {
@@ -112,4 +100,72 @@ a.nav-link.active::after {
     width: 100%;
     left: 0;
     margin-top: 10px;
+}
+
+.owl-carousel .owl-item img {
+    width: 120px !important;
+}
+
+.owl-carousel .owl-item {
+    display: flex;
+    justify-content: center;
+}
+
+.owl-carousel {
+    position: relative;
+}
+
+.owl-nav {
+    position: absolute;
+    top: 7px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.owl-prev,
+.owl-next {
+    margin-left: -25px !important;
+    background: transparent !important;
+    font-size: 30px !important;
+}
+
+.owl-next {
+    margin-right: -25px !important;
+}
+
+.typed-cursor {
+    display: none !important;
+}
+
+.work_showcase_details .carousel-item figure img {
+    width: 100% !important;
+}
+
+@media only screen and (max-width: 768px) {
+    .heading-title {
+        font-size: 15vw !important;
+    }
+    div#navbarCollapse {
+        background: #fff;
+    }
+    .home-page a.nav-link {
+        color: #000;
+    }
+    .heading-title span {
+        height: 285px !important;
+    }
+    .image_block_section .disp-none {
+        display: none !important;
+    }
+    .image_block_section .col-6 {
+        display: flex;
+        justify-content: center;
+    }
+    .image_block_section .work-card-cont {
+        margin: 2rem 0;
+    }
+    .container_footer:not(:nth-child(1))::before {
+        display: none;
+    }
 }

@@ -9,8 +9,13 @@
     color: #ed1e24;
 }
 
+.about__container .about__desc_box2 p {
+    color: #fff;
+}
+
 .about__container .about__desc_box1 span {
     font-weight: bold;
+    color: #fff;
 }
 
 .about__img_section {

@@ -14,6 +14,10 @@ import { BrandSliderComponent } from './components/shared/brand-slider/brand-sli
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PagesTitleComponent } from './components/shared/pages-title/pages-title.component';
+import { HttpClient,HttpClientModule  } from '@angular/common/http';
+import { WorkDetailsComponent } from './components/pages/work-details/work-details.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,6 +30,7 @@ import { PagesTitleComponent } from './components/shared/pages-title/pages-title
     AccordianComponent,
     BrandSliderComponent,
     PagesTitleComponent,
+    WorkDetailsComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,6 +39,8 @@ import { PagesTitleComponent } from './components/shared/pages-title/pages-title
     AccordionModule,
     CarouselModule,
     BrowserAnimationsModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

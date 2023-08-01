@@ -1,40 +1,50 @@
-<div class="register-form-home-wrapper wow bounceIn" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: bounceIn;">
+<div class="register-form-home-wrapper">
 
     <h3>Get in touch with us</h3>
 
     <div>
-        <p class="register_success_box_home" style="display:none;">We received your message and you will hear from us soon. Thank You!</p>
- 
-        <form id="register-form-home" class="register-form-home register" action="php/callback.php" method="post">
-            
+        <p class="register_success_box_home" *ngIf="showMsg">We received your message and you will hear from us soon. Thank You!</p>
 
-            <input class="register-input-home name-input-home grey-input" required="" name="register_names_home" placeholder="Company Name*" type="text">
-        
-            <input class="register-input-home name-email-home grey-input" required="" name="register_email_home" placeholder="Email Adress*" type="email">
-
-            <select class="register-input-home grey-input" required="" name="register_ticket_home">
-
-                <option value="">Which Service(s) would you&nbsp;like?</option>
-
-                <option value="Film Publicity Campaign">Film Publicity Campaign</option>
-
-                <option value="Branding &amp; Design">Branding &amp; Design</option>
-
-                <option value="Digital Campaigns">Digital Campaigns</option>
-
-                <option value="Advertising Campaigns">Advertising Campaigns</option>
-
-                <option value="Web Development">Web Development</option>
-
-                <option value="Creative Photography &amp; Video">Creative Photography &amp; Video</option>
+        <form action="javascript:void(0);" [formGroup]="form" (submit)="onSubmit()">
+            <div class="form-group row my-2">
+                <label class="col-sm-12 col-form-label">Name</label>
+                <div class="col-sm-12">
+                    <input formControlName="your_name" class="form-control">
+                    <div class="error-class" *ngIf="form.get('your_name')?.invalid && (form.get('your_name')?.dirty || form.get('your_name')?.touched)">
+                        Please provide a name.
+                    </div>
+                </div>
 
 
-            </select>
-           
-            <input value="Call back" class="register-submit-home" type="submit">
-                
+            </div>
+            <div class="form-group row my-2">
+                <label class="col-sm-12 col-form-label">Email</label>
+                <div class="col-sm-12">
+                    <input formControlName="your_email" class="form-control">
+                    <div class="error-class" *ngIf="form.get('your_email')?.invalid && (form.get('your_email')?.dirty || form.get('your_email')?.touched)">
+                        Please provide a valid email address.
+                    </div>
+                </div>
+
+            </div>
+            <div class="form-group row my-2">
+                <label class="col-sm-12 col-form-label" for="inputState">Service</label>
+                <div class="col-sm-12">
+                    <select formControlName="your_service" id="inputState" class="form-control">
+                  <option>service 1</option>
+                  <option>service 2</option>
+                  <option>service 3</option>
+                  <option>service 4</option>
+                </select>
+                    <div class="error-class" *ngIf="form.get('your_service')?.invalid && (form.get('your_service')?.dirty || form.get('your_service')?.touched)">
+                        Messages must be choose service.
+                    </div>
+                </div>
+
+            </div>
+            <button class="btn btn-primary mt-2" type="submit" [disabled]="form.invalid">Call Back</button>
         </form>
-        
+
     </div>
 
 </div>
