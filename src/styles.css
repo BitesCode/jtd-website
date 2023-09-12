@@ -148,9 +148,15 @@ a.nav-link.active::after {
     }
     div#navbarCollapse {
         background: #fff;
+        height: 450px;
     }
     .home-page a.nav-link {
-        color: #000;
+        color: #000 !important;
+    }
+    a.nav-link,
+    a.nav-link.active {
+        position: relative;
+        color: #000 !important;
     }
     .heading-title span {
         height: 285px !important;

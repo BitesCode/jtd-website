@@ -13,3 +13,12 @@
 .top__content_banner .top__left_content h3 span {
     color: #ed1e24;
 }
+
+@media only screen and (max-width: 768px) {
+    .top__content_banner .top__left_content h3 {
+        font-size: 2rem;
+    }
+    .top__content_banner {
+        padding: 20px 0;
+    }
+}

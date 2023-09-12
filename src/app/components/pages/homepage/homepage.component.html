@@ -26,18 +26,13 @@
         <div class="col-12 col-md-12">
             <div class="some_fact-card p-5">
                 <div class="row">
-                    <div class="col-12 col-md-6 p-5">
-                        <h1>Some fun facts</h1>
-                        <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as</p>
-                    </div>
-
-                    <div class="col-12 col-md-6 p-5">
+                    <div class="col-12 col-md-12 p-5">
                         <div class="facts_block">
                             <div class="block block1">
                                 <i class="fa-solid fa-suitcase"></i>
                                 <div class="context">
                                     <div class="number">
-                                        1000+
+                                        {{projectcount + "+"}}
                                     </div>
                                     <div class="title">
                                         Projects Done
@@ -48,7 +43,7 @@
                                 <i class="fa-solid fa-heart"></i>
                                 <div class="context">
                                     <div class="number">
-                                        100
+                                        {{ clientcount + "+"}}
                                     </div>
                                     <div class="title">
                                         Happy Clients
@@ -59,7 +54,7 @@
                                 <i class="fa-solid fa-mug-saucer"></i>
                                 <div class="context">
                                     <div class="number">
-                                        3000+
+                                        {{ coffeecount + "+"}}
                                     </div>
                                     <div class="title">
                                         Coffee Cup
@@ -70,7 +65,7 @@
                                 <i class="fa-solid fa-lightbulb"></i>
                                 <div class="context">
                                     <div class="number">
-                                        1500+
+                                        {{ greatIdeas }}
                                     </div>
                                     <div class="title">
                                         Great Ideas
@@ -84,6 +79,31 @@
         </div>
     </div>
 </div>
+
+<div class="container mission-vission-section">
+    <div class="row">
+        <div class="col-md-6 col-12">
+            <div class="card left-card">
+                <div class="card-body">
+                    <h5 class="card-title">Mission</h5>
+                    <p class="card-text">Our mission is to partner with companies to understand their unique challenges and opportunities, and deliver insightful, data-driven solutions that drive results. We believe in collaboration, transparency, and putting our clients'
+                        needs first.</p>
+                    <!-- <a href="#" class="card-link">Card link</a> -->
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-12">
+            <div class="card right-card">
+                <div class="card-body">
+                    <h5 class="card-title">Vision</h5>
+                    <p class="card-text">Our vision is to be the go-to agency for the companies looking for a strategic partner that can help them achieve their marketing objectives with precision and creativity.</p>
+                    <!-- <a href="#" class="card-link">Card link</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="container work_showcase-section">
     <div class="row">
         <div class="bacground-overlay">
@@ -91,7 +111,7 @@
         </div>
         <div class="col-12 col-md-4 left_section">
             <h1>What we can do for you or your business</h1>
-            <a class="readmore" href="#">Read More <i class="fa-solid fa-arrow-right has-transition"></i></a>
+            <a class="readmore" routerLink="/service">Read More <i class="fa-solid fa-arrow-right has-transition"></i></a>
         </div>
         <div class="col-12 col-md-8 image_block_section">
             <div class="row">
@@ -100,7 +120,7 @@
                         <a href="#">
                             <img src="assets/work/1.jpg" alt="">
                             <div class="work-info">
-                                Film Publicity Campaign
+                                Branding & Design
                             </div>
                         </a>
                     </div>
@@ -111,7 +131,7 @@
                         <a href="#">
                             <img src="assets/work/3.jpg" alt="">
                             <div class="work-info">
-                                Advertising Campaigns
+                                Print Ad Campaigns
                             </div>
                         </a>
                     </div>
@@ -125,7 +145,7 @@
                         <a href="#">
                             <img src="assets/work/2.jpg" alt="">
                             <div class="work-info">
-                                Branding & Design
+                                Digital Marketing Campaigns
                             </div>
                         </a>
                     </div>

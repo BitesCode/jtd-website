@@ -31,13 +31,21 @@
                 <label class="col-sm-12 col-form-label" for="inputState">Service</label>
                 <div class="col-sm-12">
                     <select formControlName="your_service" id="inputState" class="form-control">
-                  <option>service 1</option>
-                  <option>service 2</option>
-                  <option>service 3</option>
-                  <option>service 4</option>
-                </select>
+
+                        <option value="Film Publicity Campaign">Film Publicity Campaign</option>
+
+                        <option value="Branding &amp; Design">Branding &amp; Design</option>
+
+                        <option value="Digital Campaigns">Digital Campaigns</option>
+
+                        <option value="Advertising Campaigns">Advertising Campaigns</option>
+
+                        <option value="Web Development">Web Development</option>
+
+                        <option value="Creative Photography &amp; Video">Creative Photography &amp; Video</option>
+                    </select>
                     <div class="error-class" *ngIf="form.get('your_service')?.invalid && (form.get('your_service')?.dirty || form.get('your_service')?.touched)">
-                        Messages must be choose service.
+                        Must be choose a service.
                     </div>
                 </div>
 

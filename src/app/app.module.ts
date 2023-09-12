@@ -17,6 +17,7 @@ import { PagesTitleComponent } from './components/shared/pages-title/pages-title
 import { HttpClient,HttpClientModule  } from '@angular/common/http';
 import { WorkDetailsComponent } from './components/pages/work-details/work-details.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { SideFormComponent } from './components/shared/side-form/side-form.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     BrandSliderComponent,
     PagesTitleComponent,
     WorkDetailsComponent,
+    SideFormComponent,
   ],
   imports: [
     BrowserModule,

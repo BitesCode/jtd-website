@@ -34,3 +34,55 @@
 .navbarSectionMain .navbar-nav {
     gap: 30px;
 }
+
+button.navbar-toggler {
+    background: transparent;
+    border: 1px solid #d5333e;
+}
+
+span.navbar-toggler-icon {
+    filter: invert(18%) sepia(62%) saturate(4191%) hue-rotate(344deg) brightness(102%) contrast(77%);
+}
+
+.content {
+    overflow: hidden;
+    max-width: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: #fff;
+    z-index: 11111;
+    height: 100%;
+    transition: max-width 0.3s ease-in-out;
+    overflow-y: scroll;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.content.visible {
+    max-width: 500px;
+}
+
+a.closebtn {
+    display: flex;
+    justify-content: end;
+    font-size: 30px;
+    text-decoration: none;
+    color: #ed1e24;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.bg-opacity {
+    background: #00000057;
+    width: 100vw;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbarSectionMain .navbar-nav {
+        padding: 1.5rem;
+    }
+}

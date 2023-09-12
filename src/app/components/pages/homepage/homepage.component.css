@@ -35,8 +35,7 @@
 .facts_block {
     display: grid;
     gap: 35px;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .some_fact-card .col-6.p-5:nth-child(2) {
@@ -143,4 +142,57 @@
 .brand_slider-section h1 {
     font-weight: bold;
     color: #fff;
+}
+
+.mission-vission-section {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.mission-vission-section p.card-text {
+    font-size: 1.1rem;
+}
+
+.mission-vission-section .card-body {
+    padding: 3rem;
+}
+
+.mission-vission-section h5.card-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    margin-bottom: 2rem;
+}
+
+.mission-vission-section .left-card {
+    background: #181818;
+    color: #fff;
+    border-color: #d5333e;
+    height: 20rem;
+}
+
+.mission-vission-section .right-card {
+    background: #d5333e;
+    color: #fff;
+    height: 20rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .facts_block {
+        display: flex !important;
+        flex-direction: column;
+    }
+    .card.left-card,
+    .card.right-card {
+        height: auto !important;
+        margin-bottom: 2rem;
+    }
+    .mission-vission-section .card-body {
+        padding: 1.5rem;
+        height: 20rem;
+    }
+    .brand_slider-section.p-5 {
+        padding: 0rem !important;
+    }
 }

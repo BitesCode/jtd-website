@@ -27,7 +27,7 @@ export class WorksComponent {
   getSinglePost(){
     this.WorkDataService.getPosts().subscribe((data:any)=>{
       this.workPost = data;
-        console.log(data);
+        // console.log(data);
       }
     )
   }

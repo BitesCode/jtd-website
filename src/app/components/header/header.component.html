@@ -4,32 +4,40 @@
             <a class="navbar-brand" href="/">
                 <img src="assets/logo/logo.png" alt="logo">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleNavbar()">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse" [ngClass]="{ 'show': !isNavbarCollapsed }">
 
                 <div class="menu-top-menu-container">
                     <ul class="navbar-nav mb-2 mb-md-0">
                         <li id="menu-item-28" class="menu-item">
-                            <a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a></li>
+                            <a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="closeNavbar()">Home</a>
+                        </li>
                         <li id="menu-item-55" class="menu-item">
-                            <a class="nav-link" routerLink="/works" routerLinkActive="active">Work</a>
+                            <a class="nav-link" routerLink="/works" routerLinkActive="active" (click)="closeNavbar()">Work</a>
                         </li>
                         <li id="menu-item-26" class="menu-item">
-                            <a class="nav-link" routerLink="/service" routerLinkActive="active">Services</a>
+                            <a class="nav-link" routerLink="/service" routerLinkActive="active" (click)="closeNavbar()">Services</a>
                         </li>
                         <li id="menu-item-25" class="menu-item">
-                            <a class="nav-link" routerLink="/about" routerLinkActive="active">About</a>
+                            <a class="nav-link" routerLink="/about" routerLinkActive="active" (click)="closeNavbar()">About</a>
                         </li>
                         <li id="menu-item-24" class="menu-item">
-                            <a class="nav-link" routerLink="/contact" routerLinkActive="active">Contact</a>
+                            <a class="nav-link" routerLink="/contact" routerLinkActive="active" (click)="closeNavbar()">Contact</a>
                         </li>
                     </ul>
                 </div>
-                <a href="#" id="hideAside" class="quote-btn">Request a quote</a>
+                <a id="hideAside" class="quote-btn" (click)="toggleContent()" (click)="closeNavbar()">Request a quote</a>
             </div>
         </div>
     </nav>
 
 </header>
+<div class="hidden-side-form">
+    <div class="content" [ngClass]="{ 'visible': isContentVisible }">
+        <!-- <div class="bg-opacity"></div> -->
+        <a class="closebtn" (click)="toggleContentClose()"><i class="fa-solid fa-xmark"></i></a>
+        <app-side-form></app-side-form>
+    </div>
+</div>

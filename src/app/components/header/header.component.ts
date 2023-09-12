@@ -6,5 +6,25 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+  isNavbarCollapsed: boolean = true;
 
+  isContentVisible: boolean = false;
+
+  toggleNavbar(): void {
+    this.isNavbarCollapsed = !this.isNavbarCollapsed;
+  }
+
+
+  closeNavbar(): void {
+    this.isNavbarCollapsed = true;
+  }
+
+
+  toggleContent() {
+    this.isContentVisible = !this.isContentVisible;
+  }
+
+  toggleContentClose() {
+    this.isContentVisible = false;
+  }
 }

@@ -29,7 +29,7 @@ export class WorkDetailsComponent {
   getSinglePost() {
     this.WorkDataService.getPosts().subscribe((data: any) => {
       this.workPost = data; 
-      console.log(this.workPost);
+      // console.log(this.workPost);
     }
     )
   }

@@ -1,0 +1,47 @@
+<form class="quote__form" action="javascript:void(0);" [formGroup]="quoteForm" (submit)="onSubmit()">
+    <div class="quote__title">
+        <h2>Request a quote</h2>
+        <p>Get a ballpark costing on the product or idea you want to build. Be specific to get a more concise cost and timeline.</p>
+    </div>
+    <hr>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Name/Company Name</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" id="name" formControlName="name">
+        <div class="error-class" *ngIf="quoteForm.get('name')?.invalid && (quoteForm.get('name')?.dirty || quoteForm.get('name')?.touched)">
+            Please provide a Name.
+        </div>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email Address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="email">
+        <div class="error-class" *ngIf="quoteForm.get('email')?.invalid && (quoteForm.get('email')?.dirty || quoteForm.get('email')?.touched)">
+            Please provide a Email.
+        </div>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Contact No</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="contactNo">
+        <div class="error-class" *ngIf="quoteForm.get('contactNo')?.invalid && (quoteForm.get('contactNo')?.dirty || quoteForm.get('contactNo')?.touched)">
+            Please provide a Contact.
+        </div>
+
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Which Service(s) would you like to choose?</label>
+        <select formControlName="your_service" id="inputState" class="form-control">
+
+            <option value="Film Publicity Campaign">Film Publicity Campaign</option>
+
+            <option value="Branding &amp; Design">Branding &amp; Design</option>
+
+            <option value="Digital Campaigns">Digital Campaigns</option>
+
+            <option value="Advertising Campaigns">Advertising Campaigns</option>
+
+            <option value="Web Development">Web Development</option>
+
+            <option value="Creative Photography &amp; Video">Creative Photography &amp; Video</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary" [disabled]="quoteForm.invalid">Send</button>
+</form>

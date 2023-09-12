@@ -1,0 +1,29 @@
+.quote__form {
+    padding: 30px;
+}
+
+.quote__title h2 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.quote__form label {
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.quote__form button {
+    background: #ed1e24;
+    border: none;
+    width: 100%;
+    border-radius: 100px;
+    padding: 10px;
+    margin-top: 35px;
+    color: #fff;
+}
+
+.error-class {
+    color: red;
+    font-size: 0.8rem;
+}
